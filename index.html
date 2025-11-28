@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>3D 운전면허 기능시험 코스</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas id="game"></canvas>
+
+  <div class="hud hud-left">
+    <div class="label">TIMER</div>
+    <div id="hud-timer" class="value">0</div>
+  </div>
+  <div class="hud hud-right">
+    <div class="label">SPEED</div>
+    <div id="hud-speed" class="value">0</div>
+  </div>
+
+  <div id="status" class="status">
+    <span id="hud-section">Ready</span>
+    <span id="hud-score" class="score">Score 100</span>
+    <span id="sudden" class="indicator">돌발</span>
+  </div>
+
+  <div id="overlay" class="overlay hidden">
+    <div id="overlay-text" class="overlay-text">PASS</div>
+  </div>
+
+  <div class="btn-bar">
+    <button id="btn-start" class="btn">시험 시작</button>
+    <button id="btn-retry" class="btn">다시 시작</button>
+    <button id="btn-view" class="btn">시점 전환</button>
+  </div>
+
+  <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+  <script src="https://unpkg.com/three@0.160.0/examples/js/loaders/GLTFLoader.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r160/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r160/examples/js/loaders/GLTFLoader.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
